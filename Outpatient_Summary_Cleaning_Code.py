@@ -3,7 +3,7 @@ import os
 import csv
 
 script_dir = os.path.dirname(__file__)
-rel_path = 'outpatients.csv'
+rel_path = 'outpatients_deidentified.csv'
 abs_file_path = os.path.join(script_dir, rel_path)
 csv_file = open(abs_file_path, newline='')
 csv_data = csv.DictReader(csv_file)
